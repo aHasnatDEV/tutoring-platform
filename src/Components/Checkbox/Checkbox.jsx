@@ -21,7 +21,7 @@ const Checkbox = ({
       <input
         type="checkbox"
         id={checkboxId}
-        className='cursor-pointer'
+        className='cursor-pointer w-5 h-5'
         onChange={handelCheckbox}
         {...restProps}
       />
