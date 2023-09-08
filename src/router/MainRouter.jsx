@@ -7,7 +7,8 @@ import App from '../App';
 import AuthPage from '../Features/Authentication/AuthPage';
 import Home from '../Pages/Home';
 import Login from '../Features/Authentication/components/Login';
-import SingIn from '../Features/Authentication/components/SingIn';
+import SingInRoll from '../Features/Authentication/components/SingIn/SingInRoll';
+import SingInForm from '../Features/Authentication/components/SingIn/SingInForm';
 
 export const router = createBrowserRouter(
   createRoutesFromElements(
@@ -15,7 +16,8 @@ export const router = createBrowserRouter(
       <Route path='/' element={<Home />} />
       <Route path='authentication' element={<AuthPage />}>
         <Route path='' element={<Login />} />
-        <Route path='sing-in' element={<SingIn />} />
+        <Route path='sing-roll' element={<SingInRoll />} />
+        <Route path='sing-form' element={<SingInForm />} />
       </Route>
     </Route>
   )

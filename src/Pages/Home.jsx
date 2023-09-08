@@ -17,7 +17,7 @@ const Home = () => {
     </div>
 
     <div className='my-8 w-full flex justify-center gap-4'>
-      <Button btnName='Sing In' btnType='primary-outline' onClick={() => navigation('/authentication/sing-in')} />
+      <Button btnName='Sing In' btnType='primary-outline' onClick={() => navigation('/authentication/sing-roll')} />
       <Button btnName='Log In' onClick={() => navigation('/authentication')} />
     </div>
 

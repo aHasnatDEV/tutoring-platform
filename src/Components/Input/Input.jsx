@@ -1,9 +1,9 @@
 import React from 'react';
 
-const Input = ({ label, type, inputId, placeholder }) => {
+const Input = ({ label, labelColor, type, inputId, placeholder }) => {
   return (
     <div className='flex flex-col gap-1'>
-      <label htmlFor={inputId}>{label}</label>
+      <label htmlFor={inputId} className={labelColor ? labelColor : 'text-black'}>{label}</label>
       <input
         type={type}
         id={inputId}
